@@ -8,7 +8,7 @@
         "svrcore": {
             "type": "dylib",
             "requires": ["nspr", "nss"],
-            "includes": {"c": ["@prefix@/include"]},
+            "includes": {"*": ["@prefix@/include"]},
             "location": "@prefix@/lib/x86_64-linux-gnu/libsvrcore.so",
         }
     }
