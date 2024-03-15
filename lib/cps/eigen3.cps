@@ -3,7 +3,7 @@
     "cps_version": "0.10.0",
     "version": "3.4.0",
     "components": {
-        "default": {
+        "eigen3": {
             "type": "interface",
             "includes": {
                 "c": [
@@ -13,6 +13,6 @@
         }
     },
     "default_components": [
-        "default"
+        "eigen3"
     ]
 }
