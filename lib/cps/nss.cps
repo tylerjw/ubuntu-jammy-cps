@@ -23,6 +23,5 @@
             "type": "dylib",
             "location": "@prefix@/lib/x86_64-linux-gnu/libssl3.so",
         },
-
     }
 }
