@@ -9,7 +9,7 @@
             "type": "dylib",
             "includes": {"*": ["@prefix@/include/dirsrv"]},
             "defines": {"*": ["USE_OPENLDAP"]},
-            "location": "@prefix@/lib/x86_64-linux-gnu/dirsrv/libslapd.so",
+            "location": "@prefix@/lib/x86_64-linux-gnu/dirsrv/libslapd.so"
         }
     }
 }

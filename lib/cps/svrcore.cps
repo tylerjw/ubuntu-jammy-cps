@@ -9,7 +9,7 @@
             "type": "dylib",
             "requires": ["nspr", "nss"],
             "includes": {"*": ["@prefix@/include"]},
-            "location": "@prefix@/lib/x86_64-linux-gnu/libsvrcore.so",
+            "location": "@prefix@/lib/x86_64-linux-gnu/libsvrcore.so"
         }
     }
 }

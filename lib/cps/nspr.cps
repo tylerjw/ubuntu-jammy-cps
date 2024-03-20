@@ -9,15 +9,15 @@
             "type": "archive",
             "includes": {"*": ["@prefix@/include/nspr"]},
             "location": "@prefix@/lib/x86_64-linux-gnu/libnspr4.a",
-            "requires": [":plc4", ":plds4"],
+            "requires": [":plc4", ":plds4"]
         },
         "plc4": {
             "type": "archive",
-            "location": "@prefix@/lib/x86_64-linux-gnu/libplc4.a",
+            "location": "@prefix@/lib/x86_64-linux-gnu/libplc4.a"
         },
         "plds4": {
             "type": "archive",
-            "location": "@prefix@/lib/x86_64-linux-gnu/libplds4.a",
+            "location": "@prefix@/lib/x86_64-linux-gnu/libplds4.a"
         }
     }
 }
