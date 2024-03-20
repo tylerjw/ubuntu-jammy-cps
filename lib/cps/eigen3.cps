@@ -7,7 +7,7 @@
     "components": {
         "eigen3": {
             "type": "interface",
-            "includes": {"c": ["@prefix@/include/eigen3"]}
+            "includes": {"*": ["@prefix@/include/eigen3"]}
         }
     }
 }
