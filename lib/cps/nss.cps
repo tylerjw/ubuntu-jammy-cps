@@ -9,19 +9,19 @@
             "type": "dylib",
             "includes": {"*": ["@prefix@/include/nss"]},
             "location": "@prefix@/lib/x86_64-linux-gnu/libnss3.so",
-            "requres": [":nssutil3", ":smime3", ":ssl3"]
+            "requires": [":nssutil3", ":smime3", ":ssl3"]
         },
         "nssutil3": {
             "type": "dylib",
-            "location": "@prefix@/lib/x86_64-linux-gnu/libnssutil3.so",
+            "location": "@prefix@/lib/x86_64-linux-gnu/libnssutil3.so"
         },
         "smime3": {
             "type": "dylib",
-            "location": "@prefix@/lib/x86_64-linux-gnu/libsmime3.so",
+            "location": "@prefix@/lib/x86_64-linux-gnu/libsmime3.so"
         },
         "ssl3": {
             "type": "dylib",
-            "location": "@prefix@/lib/x86_64-linux-gnu/libssl3.so",
-        },
+            "location": "@prefix@/lib/x86_64-linux-gnu/libssl3.so"
+        }
     }
 }

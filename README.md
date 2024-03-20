@@ -7,6 +7,6 @@ CPS files for Ubuntu Jammy (22.04)
 
 Setup:
 ```nushell
-$env.CPS_PATH = (pwd) 
-sudo apt install libeigen3-dev 389-ds-base-dev libnss3-dev 
+$env.CPS_PATH = (pwd)
+sudo apt install libeigen3-dev 389-ds-base-dev libnss3-dev
 ```
