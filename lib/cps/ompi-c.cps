@@ -1,10 +1,10 @@
 {
   "name": "Open MPI",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "mpi": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libmpi.so",
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so",
       "includes": {
         "*": [
           "/usr/lib/x86_64-linux-gnu/openmpi/include",

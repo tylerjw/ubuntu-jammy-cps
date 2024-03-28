@@ -1,18 +1,41 @@
 {
   "name": "tinfo",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
-    "tinfo": {
+    "tinfo-static": {
       "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libtinfo.so",
+      "location": "/usr/lib/x86_64-linux-gnu/libtinfo.so"
+    },
+    "tinfo": {
+      "type": "interface",
+      "configurations": {
+        "shared": {
+          "requires": [
+            ":tinfo-shared"
+          ]
+        },
+        "static": {
+          "requires": [
+            ":tinfo-static"
+          ]
+        }
+      },
       "definitions": {
         "*": [
           "_DEFAULT_SOURCE",
           "_XOPEN_SOURCE=600"
         ]
       }
+    },
+    "tinfo-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libtinfo.a"
     }
   },
+  "configurations": [
+    "shared",
+    "static"
+  ],
   "version": "6.3.20211021",
   "description": "ncurses 6.3 terminal interface library",
   "default_components": [

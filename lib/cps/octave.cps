@@ -1,9 +1,9 @@
 {
   "name": "GNU Octave",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "octave": {
-      "type": "archive",
+      "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/octave/6.4.0/liboctave.so",
       "includes": {
         "*": [

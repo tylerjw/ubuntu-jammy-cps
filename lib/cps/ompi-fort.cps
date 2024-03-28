@@ -1,18 +1,26 @@
 {
   "name": "Open MPI",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "mpi_mpifh": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libmpi_mpifh.so"
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_mpifh.so"
+    },
+    "mpi_usempi_ignore_tkr": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_usempi_ignore_tkr.so"
+    },
+    "mpi": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so"
     },
     "mpi_usempif08": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libmpi_usempif08.so",
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_usempif08.so",
       "requires": [
         ":mpi",
-        ":mpi_usempi_ignore_tkr",
-        ":mpi_mpifh"
+        ":mpi_mpifh",
+        ":mpi_usempi_ignore_tkr"
       ],
       "includes": {
         "*": [
@@ -21,14 +29,6 @@
           "/usr/lib/x86_64-linux-gnu/openmpi/lib"
         ]
       }
-    },
-    "mpi": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libmpi.so"
-    },
-    "mpi_usempi_ignore_tkr": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libmpi_usempi_ignore_tkr.so"
     }
   },
   "version": "4.1.2",

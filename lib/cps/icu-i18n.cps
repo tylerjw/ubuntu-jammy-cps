@@ -1,26 +1,28 @@
 {
-  "name": "memtailor",
+  "name": "icu-i18n",
   "cps_version": "0.11.0",
   "components": {
-    "memtailor-shared": {
+    "icui18n-shared": {
       "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libmemtailor.a"
+      "location": "/usr/lib/x86_64-linux-gnu/libicui18n.a"
     },
-    "memtailor-static": {
+    "icui18n-static": {
       "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libmemtailor.so"
+      "location": "/usr/lib/x86_64-linux-gnu/libicui18n.so"
     },
-    "memtailor": {
+    "icui18n": {
       "type": "interface",
       "configurations": {
         "shared": {
           "requires": [
-            ":memtailor-shared"
+            ":icui18n-shared",
+            "icu-uc"
           ]
         },
         "static": {
           "requires": [
-            ":memtailor-static"
+            ":icui18n-static",
+            "icu-uc"
           ]
         }
       },
@@ -35,9 +37,9 @@
     "shared",
     "static"
   ],
-  "version": "1.0",
-  "description": "C++ library of special purpose memory allocators.",
+  "version": "70.1",
+  "description": "International Components for Unicode: Internationalization library",
   "default_components": [
-    "memtailor"
+    "icui18n"
   ]
 }

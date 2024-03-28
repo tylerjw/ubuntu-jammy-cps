@@ -1,22 +1,28 @@
 {
-  "name": "libmlx4",
+  "name": "icu-io",
   "cps_version": "0.11.0",
   "components": {
-    "mlx4-shared": {
+    "icuio-shared": {
       "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libmlx4.a"
+      "location": "/usr/lib/x86_64-linux-gnu/libicuio.a"
     },
-    "mlx4": {
+    "icuio-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libicuio.so"
+    },
+    "icuio": {
       "type": "interface",
       "configurations": {
         "shared": {
           "requires": [
-            ":mlx4-shared"
+            ":icuio-shared",
+            "icu-i18n"
           ]
         },
         "static": {
           "requires": [
-            ":mlx4-static"
+            ":icuio-static",
+            "icu-i18n"
           ]
         }
       },
@@ -25,19 +31,15 @@
           "/usr/include"
         ]
       }
-    },
-    "mlx4-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libmlx4.so"
     }
   },
   "configurations": [
     "shared",
     "static"
   ],
-  "version": "1.0.39.0",
-  "description": "RDMA Core Userspace Library",
+  "version": "70.1",
+  "description": "International Components for Unicode: Stream and I/O Library",
   "default_components": [
-    "mlx4"
+    "icuio"
   ]
 }

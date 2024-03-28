@@ -1,9 +1,9 @@
 {
   "name": "ACE_Monitor_Control",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "ACE_Monitor_Control": {
-      "type": "archive",
+      "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libACE_Monitor_Control.so",
       "requires": [
         "ACE_ETCL_Parser"

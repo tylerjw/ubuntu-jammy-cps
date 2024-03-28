@@ -1,17 +1,40 @@
 {
   "name": "notcurses-core",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
+    "notcurses-core-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses-core.a"
+    },
     "notcurses-core": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses-core.so",
+      "type": "interface",
+      "configurations": {
+        "shared": {
+          "requires": [
+            ":notcurses-core-shared"
+          ]
+        },
+        "static": {
+          "requires": [
+            ":notcurses-core-static"
+          ]
+        }
+      },
       "includes": {
         "*": [
           "/usr/include"
         ]
       }
+    },
+    "notcurses-core-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses-core.so"
     }
   },
+  "configurations": [
+    "shared",
+    "static"
+  ],
   "version": "3.0.6",
   "description": "TUI library for modern terminal emulators (core library)",
   "default_components": [

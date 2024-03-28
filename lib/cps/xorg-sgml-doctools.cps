@@ -1,6 +1,6 @@
 {
   "name": "xorg-sgml-doctools",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "xorg-sgml-doctools": {
       "type": "interface"

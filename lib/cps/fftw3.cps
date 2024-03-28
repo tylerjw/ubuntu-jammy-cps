@@ -1,17 +1,40 @@
 {
   "name": "FFTW",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "fftw3": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libfftw3.so",
+      "type": "interface",
+      "configurations": {
+        "shared": {
+          "requires": [
+            ":fftw3-shared"
+          ]
+        },
+        "static": {
+          "requires": [
+            ":fftw3-static"
+          ]
+        }
+      },
       "includes": {
         "*": [
           "/usr/include"
         ]
       }
+    },
+    "fftw3-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libfftw3.a"
+    },
+    "fftw3-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libfftw3.so"
     }
   },
+  "configurations": [
+    "shared",
+    "static"
+  ],
   "version": "3.3.8",
   "description": "fast Fourier transform library",
   "default_components": [

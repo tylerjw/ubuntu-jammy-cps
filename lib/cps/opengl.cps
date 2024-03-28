@@ -1,9 +1,9 @@
 {
   "name": "OpenGL",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "OpenGL": {
-      "type": "archive",
+      "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libOpenGL.so",
       "includes": {
         "*": [

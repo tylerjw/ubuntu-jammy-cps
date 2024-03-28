@@ -1,9 +1,9 @@
 {
   "name": "GLESv2",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "GLESv2": {
-      "type": "archive",
+      "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libGLESv2.so",
       "includes": {
         "*": [

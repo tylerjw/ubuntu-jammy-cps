@@ -1,9 +1,9 @@
 {
   "name": "GL",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "GL": {
-      "type": "archive",
+      "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libGL.so",
       "includes": {
         "*": [

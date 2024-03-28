@@ -1,10 +1,10 @@
 {
   "name": "Open Portability Access Layer (OPAL)",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "open-pal": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libopen-pal.so",
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so",
       "includes": {
         "*": [
           "/usr/lib/x86_64-linux-gnu/openmpi/include",

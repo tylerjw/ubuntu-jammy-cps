@@ -1,6 +1,6 @@
 {
   "name": "XF86VidModeProto",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "XF86VidModeProto": {
       "type": "interface",

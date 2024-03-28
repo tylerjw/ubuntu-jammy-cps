@@ -1,9 +1,9 @@
 {
   "name": "ACE_ETCL_Parser",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "ACE_ETCL_Parser": {
-      "type": "archive",
+      "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libACE_ETCL_Parser.so",
       "requires": [
         "ACE_ETCL"

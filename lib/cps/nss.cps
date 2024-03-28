@@ -1,25 +1,17 @@
 {
   "name": "NSS",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "nssutil3": {
-      "type": "archive",
+      "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libnssutil3.so"
     },
-    "ssl3": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libssl3.so"
-    },
-    "smime3": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libsmime3.so"
-    },
     "nss3": {
-      "type": "archive",
+      "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libnss3.so",
       "requires": [
-        ":smime3",
         ":nssutil3",
+        ":smime3",
         ":ssl3",
         "nspr"
       ],
@@ -28,6 +20,14 @@
           "/usr/include/nss"
         ]
       }
+    },
+    "ssl3": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libssl3.so"
+    },
+    "smime3": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libsmime3.so"
     }
   },
   "version": "3.68.2",

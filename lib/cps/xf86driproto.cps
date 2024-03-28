@@ -1,6 +1,6 @@
 {
   "name": "XF86DRIProto",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "XF86DRIProto": {
       "type": "interface",

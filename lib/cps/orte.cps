@@ -1,10 +1,10 @@
 {
   "name": "Open MPI Run-Time Environment (ORTE)",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "open-rte": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libopen-rte.so",
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-rte.so",
       "includes": {
         "*": [
           "/usr/lib/x86_64-linux-gnu/openmpi/include",

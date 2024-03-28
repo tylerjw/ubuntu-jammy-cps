@@ -30,4 +30,4 @@ ENV PATH="/root/.cargo/bin:${PATH}"
 # Generate the cps files
 RUN cargo install cps-deps
 RUN mkdir /usr/lib/cps
-RUN cps_from_pkg_config /usr/lib/cps
+RUN cps-deps generate-all /usr/lib/cps

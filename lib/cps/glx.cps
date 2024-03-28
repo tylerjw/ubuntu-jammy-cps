@@ -1,9 +1,9 @@
 {
   "name": "GLX",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "GLX": {
-      "type": "archive",
+      "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libGLX.so",
       "includes": {
         "*": [

@@ -1,11 +1,12 @@
 {
   "name": "OpenSSL",
-  "cps_version": "0.10.0",
+  "cps_version": "0.11.0",
   "components": {
     "OpenSSL": {
       "type": "interface",
       "requires": [
-        "libssl libcrypto"
+        "libssl",
+        "libcrypto"
       ]
     }
   },
