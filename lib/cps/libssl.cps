@@ -6,21 +6,17 @@
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libssl.a"
     },
-    "ssl-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libssl.so"
-    },
     "ssl": {
       "type": "interface",
       "configurations": {
-        "static": {
-          "requires": [
-            ":ssl-static"
-          ]
-        },
         "shared": {
           "requires": [
             ":ssl-shared"
+          ]
+        },
+        "static": {
+          "requires": [
+            ":ssl-static"
           ]
         }
       },
@@ -29,6 +25,10 @@
           "/usr/include"
         ]
       }
+    },
+    "ssl-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libssl.so"
     }
   },
   "configurations": [

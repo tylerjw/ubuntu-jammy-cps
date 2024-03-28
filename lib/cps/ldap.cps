@@ -2,14 +2,6 @@
   "name": "ldap (OpenLDAP)",
   "cps_version": "0.11.0",
   "components": {
-    "ldap-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libldap.a"
-    },
-    "ldap-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libldap.so"
-    },
     "ldap": {
       "type": "interface",
       "configurations": {
@@ -31,6 +23,14 @@
           "/usr/include"
         ]
       }
+    },
+    "ldap-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libldap.a"
+    },
+    "ldap-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libldap.so"
     }
   },
   "configurations": [

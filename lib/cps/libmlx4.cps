@@ -9,14 +9,14 @@
     "mlx4": {
       "type": "interface",
       "configurations": {
-        "shared": {
-          "requires": [
-            ":mlx4-shared"
-          ]
-        },
         "static": {
           "requires": [
             ":mlx4-static"
+          ]
+        },
+        "shared": {
+          "requires": [
+            ":mlx4-shared"
           ]
         }
       },

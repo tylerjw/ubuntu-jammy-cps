@@ -13,15 +13,15 @@
     "Xdmcp": {
       "type": "interface",
       "configurations": {
-        "static": {
-          "requires": [
-            ":Xdmcp-static",
-            "xproto"
-          ]
-        },
         "shared": {
           "requires": [
             ":Xdmcp-shared",
+            "xproto"
+          ]
+        },
+        "static": {
+          "requires": [
+            ":Xdmcp-static",
             "xproto"
           ]
         }

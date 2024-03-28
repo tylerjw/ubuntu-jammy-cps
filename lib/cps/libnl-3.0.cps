@@ -5,14 +5,14 @@
     "nl-3": {
       "type": "interface",
       "configurations": {
-        "static": {
-          "requires": [
-            ":nl-3-static"
-          ]
-        },
         "shared": {
           "requires": [
             ":nl-3-shared"
+          ]
+        },
+        "static": {
+          "requires": [
+            ":nl-3-static"
           ]
         }
       },
@@ -22,13 +22,13 @@
         ]
       }
     },
-    "nl-3-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libnl-3.a"
-    },
     "nl-3-static": {
       "type": "archive",
       "location": "/usr/lib/x86_64-linux-gnu/libnl-3.so"
+    },
+    "nl-3-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libnl-3.a"
     }
   },
   "configurations": [

@@ -2,6 +2,14 @@
   "name": "lber (OpenLDAP)",
   "cps_version": "0.11.0",
   "components": {
+    "lber-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/liblber.so"
+    },
+    "lber-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/liblber.a"
+    },
     "lber": {
       "type": "interface",
       "configurations": {
@@ -21,14 +29,6 @@
           "/usr/include"
         ]
       }
-    },
-    "lber-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/liblber.a"
-    },
-    "lber-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/liblber.so"
     }
   },
   "configurations": [

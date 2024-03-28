@@ -2,10 +2,6 @@
   "name": "libefa",
   "cps_version": "0.11.0",
   "components": {
-    "efa-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libefa.so"
-    },
     "efa": {
       "type": "interface",
       "configurations": {
@@ -29,6 +25,10 @@
     "efa-shared": {
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libefa.a"
+    },
+    "efa-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libefa.so"
     }
   },
   "configurations": [

@@ -2,18 +2,22 @@
   "name": "notcurses",
   "cps_version": "0.11.0",
   "components": {
+    "notcurses-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses.a"
+    },
     "notcurses": {
       "type": "interface",
       "configurations": {
-        "static": {
-          "requires": [
-            ":notcurses-static",
-            "notcurses-core"
-          ]
-        },
         "shared": {
           "requires": [
             ":notcurses-shared",
+            "notcurses-core"
+          ]
+        },
+        "static": {
+          "requires": [
+            ":notcurses-static",
             "notcurses-core"
           ]
         }
@@ -23,10 +27,6 @@
           "/usr/include"
         ]
       }
-    },
-    "notcurses-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses.a"
     },
     "notcurses-static": {
       "type": "archive",

@@ -2,9 +2,9 @@
   "name": "LAPACK",
   "cps_version": "0.11.0",
   "components": {
-    "lapack-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/liblapack.so"
+    "lapack-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/liblapack.a"
     },
     "lapack": {
       "type": "interface",
@@ -21,9 +21,9 @@
         }
       }
     },
-    "lapack-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/liblapack.a"
+    "lapack-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/liblapack.so"
     }
   },
   "configurations": [

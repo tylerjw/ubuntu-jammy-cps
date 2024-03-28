@@ -6,28 +6,32 @@
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libncurses.a"
     },
+    "tinfo-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libtinfo.so"
+    },
     "tinfo": {
       "type": "interface",
       "configurations": {
-        "static": {
-          "requires": [
-            ":tinfo-static"
-          ]
-        },
         "shared": {
           "requires": [
             ":tinfo-shared"
           ]
+        },
+        "static": {
+          "requires": [
+            ":tinfo-static"
+          ]
         }
       }
+    },
+    "ncurses-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libncurses.so"
     },
     "tinfo-shared": {
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libtinfo.a"
-    },
-    "tinfo-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libtinfo.so"
     },
     "ncurses": {
       "type": "interface",
@@ -51,10 +55,6 @@
           "_XOPEN_SOURCE=600"
         ]
       }
-    },
-    "ncurses-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libncurses.so"
     }
   },
   "configurations": [

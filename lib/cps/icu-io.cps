@@ -2,13 +2,13 @@
   "name": "icu-io",
   "cps_version": "0.11.0",
   "components": {
-    "icuio-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libicuio.a"
-    },
     "icuio-static": {
       "type": "archive",
       "location": "/usr/lib/x86_64-linux-gnu/libicuio.so"
+    },
+    "icuio-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libicuio.a"
     },
     "icuio": {
       "type": "interface",

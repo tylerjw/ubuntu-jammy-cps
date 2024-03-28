@@ -5,14 +5,14 @@
     "pmix": {
       "type": "interface",
       "configurations": {
-        "shared": {
-          "requires": [
-            ":pmix-shared"
-          ]
-        },
         "static": {
           "requires": [
             ":pmix-static"
+          ]
+        },
+        "shared": {
+          "requires": [
+            ":pmix-shared"
           ]
         }
       },

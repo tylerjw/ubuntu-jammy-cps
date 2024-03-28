@@ -10,6 +10,14 @@
       "type": "archive",
       "location": "/usr/lib/x86_64-linux-gnu/libicudata.so"
     },
+    "icuuc-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libicuuc.a"
+    },
+    "icuuc-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libicuuc.so"
+    },
     "icuuc": {
       "type": "interface",
       "configurations": {
@@ -32,28 +40,20 @@
         ]
       }
     },
-    "icuuc-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libicuuc.a"
-    },
     "icudata": {
       "type": "interface",
       "configurations": {
-        "static": {
-          "requires": [
-            ":icudata-static"
-          ]
-        },
         "shared": {
           "requires": [
             ":icudata-shared"
           ]
+        },
+        "static": {
+          "requires": [
+            ":icudata-static"
+          ]
         }
       }
-    },
-    "icuuc-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libicuuc.so"
     }
   },
   "configurations": [

@@ -6,6 +6,10 @@
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libnotcurses-core.a"
     },
+    "notcurses-core-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses-core.so"
+    },
     "notcurses-core": {
       "type": "interface",
       "configurations": {
@@ -25,10 +29,6 @@
           "/usr/include"
         ]
       }
-    },
-    "notcurses-core-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses-core.so"
     }
   },
   "configurations": [

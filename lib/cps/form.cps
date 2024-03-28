@@ -2,25 +2,25 @@
   "name": "form",
   "cps_version": "0.11.0",
   "components": {
-    "form-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libform.so"
-    },
     "form-shared": {
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libform.a"
     },
+    "form-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libform.so"
+    },
     "form": {
       "type": "interface",
       "configurations": {
-        "static": {
-          "requires": [
-            ":form-static"
-          ]
-        },
         "shared": {
           "requires": [
             ":form-shared"
+          ]
+        },
+        "static": {
+          "requires": [
+            ":form-static"
           ]
         }
       },

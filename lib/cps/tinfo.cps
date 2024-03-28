@@ -9,14 +9,14 @@
     "tinfo": {
       "type": "interface",
       "configurations": {
-        "shared": {
-          "requires": [
-            ":tinfo-shared"
-          ]
-        },
         "static": {
           "requires": [
             ":tinfo-static"
+          ]
+        },
+        "shared": {
+          "requires": [
+            ":tinfo-shared"
           ]
         }
       },

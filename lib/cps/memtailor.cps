@@ -2,14 +2,6 @@
   "name": "memtailor",
   "cps_version": "0.11.0",
   "components": {
-    "memtailor-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libmemtailor.a"
-    },
-    "memtailor-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libmemtailor.so"
-    },
     "memtailor": {
       "type": "interface",
       "configurations": {
@@ -29,6 +21,14 @@
           "/usr/include"
         ]
       }
+    },
+    "memtailor-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libmemtailor.a"
+    },
+    "memtailor-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libmemtailor.so"
     }
   },
   "configurations": [

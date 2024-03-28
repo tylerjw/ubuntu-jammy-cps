@@ -2,6 +2,29 @@
   "name": "expat",
   "cps_version": "0.11.0",
   "components": {
+    "expat-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libexpat.so"
+    },
+    "m": {
+      "type": "interface",
+      "configurations": {
+        "static": {
+          "requires": [
+            ":m-static"
+          ]
+        },
+        "shared": {
+          "requires": [
+            ":m-shared"
+          ]
+        }
+      }
+    },
+    "m-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libm.so"
+    },
     "expat": {
       "type": "interface",
       "configurations": {
@@ -31,29 +54,6 @@
     "m-shared": {
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libm.a"
-    },
-    "m": {
-      "type": "interface",
-      "configurations": {
-        "shared": {
-          "requires": [
-            ":m-shared"
-          ]
-        },
-        "static": {
-          "requires": [
-            ":m-static"
-          ]
-        }
-      }
-    },
-    "expat-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libexpat.so"
-    },
-    "m-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libm.so"
     }
   },
   "configurations": [

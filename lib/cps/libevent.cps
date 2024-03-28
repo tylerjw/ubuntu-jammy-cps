@@ -2,25 +2,17 @@
   "name": "libevent",
   "cps_version": "0.11.0",
   "components": {
-    "event-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libevent.so"
-    },
-    "event-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libevent.a"
-    },
     "event": {
       "type": "interface",
       "configurations": {
-        "shared": {
-          "requires": [
-            ":event-shared"
-          ]
-        },
         "static": {
           "requires": [
             ":event-static"
+          ]
+        },
+        "shared": {
+          "requires": [
+            ":event-shared"
           ]
         }
       },
@@ -29,6 +21,14 @@
           "/usr/include"
         ]
       }
+    },
+    "event-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libevent.a"
+    },
+    "event-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libevent.so"
     }
   },
   "configurations": [

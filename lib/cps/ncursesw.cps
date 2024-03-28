@@ -9,34 +9,30 @@
     "tinfo": {
       "type": "interface",
       "configurations": {
-        "shared": {
-          "requires": [
-            ":tinfo-shared"
-          ]
-        },
         "static": {
           "requires": [
             ":tinfo-static"
           ]
+        },
+        "shared": {
+          "requires": [
+            ":tinfo-shared"
+          ]
         }
       }
-    },
-    "tinfo-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libtinfo.so"
     },
     "ncursesw": {
       "type": "interface",
       "configurations": {
-        "static": {
-          "requires": [
-            ":ncursesw-static",
-            ":tinfo"
-          ]
-        },
         "shared": {
           "requires": [
             ":ncursesw-shared",
+            ":tinfo"
+          ]
+        },
+        "static": {
+          "requires": [
+            ":ncursesw-static",
             ":tinfo"
           ]
         }
@@ -55,6 +51,10 @@
     "tinfo-shared": {
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libtinfo.a"
+    },
+    "tinfo-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libtinfo.so"
     }
   },
   "configurations": [

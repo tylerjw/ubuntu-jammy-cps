@@ -6,17 +6,21 @@
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libhwloc.a"
     },
+    "hwloc-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libhwloc.so"
+    },
     "hwloc": {
       "type": "interface",
       "configurations": {
-        "shared": {
-          "requires": [
-            ":hwloc-shared"
-          ]
-        },
         "static": {
           "requires": [
             ":hwloc-static"
+          ]
+        },
+        "shared": {
+          "requires": [
+            ":hwloc-shared"
           ]
         }
       },
@@ -25,10 +29,6 @@
           "/usr/include"
         ]
       }
-    },
-    "hwloc-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libhwloc.so"
     }
   },
   "configurations": [

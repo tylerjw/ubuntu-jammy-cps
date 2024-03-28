@@ -2,22 +2,18 @@
   "name": "libevent_openssl",
   "cps_version": "0.11.0",
   "components": {
-    "event_openssl-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libevent_openssl.so"
-    },
     "event_openssl": {
       "type": "interface",
       "configurations": {
-        "shared": {
-          "requires": [
-            ":event_openssl-shared",
-            "libevent"
-          ]
-        },
         "static": {
           "requires": [
             ":event_openssl-static",
+            "libevent"
+          ]
+        },
+        "shared": {
+          "requires": [
+            ":event_openssl-shared",
             "libevent"
           ]
         }
@@ -31,6 +27,10 @@
     "event_openssl-shared": {
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libevent_openssl.a"
+    },
+    "event_openssl-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libevent_openssl.so"
     }
   },
   "configurations": [

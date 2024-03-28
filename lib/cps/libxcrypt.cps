@@ -5,14 +5,14 @@
     "crypt": {
       "type": "interface",
       "configurations": {
-        "shared": {
-          "requires": [
-            ":crypt-shared"
-          ]
-        },
         "static": {
           "requires": [
             ":crypt-static"
+          ]
+        },
+        "shared": {
+          "requires": [
+            ":crypt-shared"
           ]
         }
       },
@@ -22,13 +22,13 @@
         ]
       }
     },
-    "crypt-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libcrypt.a"
-    },
     "crypt-static": {
       "type": "archive",
       "location": "/usr/lib/x86_64-linux-gnu/libcrypt.so"
+    },
+    "crypt-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libcrypt.a"
     }
   },
   "configurations": [

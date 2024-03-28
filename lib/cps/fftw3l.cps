@@ -2,21 +2,17 @@
   "name": "FFTW",
   "cps_version": "0.11.0",
   "components": {
-    "fftw3l-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libfftw3l.a"
-    },
     "fftw3l": {
       "type": "interface",
       "configurations": {
-        "static": {
-          "requires": [
-            ":fftw3l-static"
-          ]
-        },
         "shared": {
           "requires": [
             ":fftw3l-shared"
+          ]
+        },
+        "static": {
+          "requires": [
+            ":fftw3l-static"
           ]
         }
       },
@@ -29,6 +25,10 @@
     "fftw3l-static": {
       "type": "archive",
       "location": "/usr/lib/x86_64-linux-gnu/libfftw3l.so"
+    },
+    "fftw3l-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libfftw3l.a"
     }
   },
   "configurations": [

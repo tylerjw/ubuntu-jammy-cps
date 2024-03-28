@@ -2,6 +2,10 @@
   "name": "notcurses++",
   "cps_version": "0.11.0",
   "components": {
+    "notcurses-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses.so"
+    },
     "notcurses": {
       "type": "interface",
       "configurations": {
@@ -45,17 +49,13 @@
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libnotcurses.a"
     },
-    "notcurses-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses.so"
+    "notcurses++-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses++.a"
     },
     "notcurses++-static": {
       "type": "archive",
       "location": "/usr/lib/x86_64-linux-gnu/libnotcurses++.so"
-    },
-    "notcurses++-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libnotcurses++.a"
     }
   },
   "configurations": [

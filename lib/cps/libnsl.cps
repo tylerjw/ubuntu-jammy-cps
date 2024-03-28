@@ -2,14 +2,6 @@
   "name": "libnsl",
   "cps_version": "0.11.0",
   "components": {
-    "nsl-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libnsl.so"
-    },
-    "nsl-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libnsl.a"
-    },
     "nsl": {
       "type": "interface",
       "configurations": {
@@ -31,6 +23,14 @@
           "/usr/include"
         ]
       }
+    },
+    "nsl-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libnsl.so"
+    },
+    "nsl-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libnsl.a"
     }
   },
   "configurations": [

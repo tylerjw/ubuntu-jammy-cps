@@ -2,6 +2,14 @@
   "name": "OpenSSL-libcrypto",
   "cps_version": "0.11.0",
   "components": {
+    "crypto-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libcrypto.so"
+    },
+    "crypto-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libcrypto.a"
+    },
     "crypto": {
       "type": "interface",
       "configurations": {
@@ -21,14 +29,6 @@
           "/usr/include"
         ]
       }
-    },
-    "crypto-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libcrypto.a"
-    },
-    "crypto-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libcrypto.so"
     }
   },
   "configurations": [

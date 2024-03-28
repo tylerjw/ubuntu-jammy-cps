@@ -2,27 +2,19 @@
   "name": "X11",
   "cps_version": "0.11.0",
   "components": {
-    "X11-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libX11.so"
-    },
-    "X11-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libX11.a"
-    },
     "X11": {
       "type": "interface",
       "configurations": {
-        "shared": {
+        "static": {
           "requires": [
-            ":X11-shared",
+            ":X11-static",
             "xproto",
             "kbproto"
           ]
         },
-        "static": {
+        "shared": {
           "requires": [
-            ":X11-static",
+            ":X11-shared",
             "xproto",
             "kbproto"
           ]
@@ -33,6 +25,14 @@
           "/usr/include"
         ]
       }
+    },
+    "X11-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libX11.a"
+    },
+    "X11-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libX11.so"
     }
   },
   "configurations": [

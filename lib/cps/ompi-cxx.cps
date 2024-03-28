@@ -2,6 +2,10 @@
   "name": "Open MPI",
   "cps_version": "0.11.0",
   "components": {
+    "mpi": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so"
+    },
     "mpi_cxx": {
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so",
@@ -14,10 +18,6 @@
           "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
         ]
       }
-    },
-    "mpi": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so"
     }
   },
   "version": "4.1.2",

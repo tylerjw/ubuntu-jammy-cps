@@ -6,17 +6,21 @@
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libxcb.a"
     },
+    "xcb-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libxcb.so"
+    },
     "xcb": {
       "type": "interface",
       "configurations": {
-        "shared": {
-          "requires": [
-            ":xcb-shared"
-          ]
-        },
         "static": {
           "requires": [
             ":xcb-static"
+          ]
+        },
+        "shared": {
+          "requires": [
+            ":xcb-shared"
           ]
         }
       },
@@ -25,10 +29,6 @@
           "/usr/include"
         ]
       }
-    },
-    "xcb-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libxcb.so"
     }
   },
   "configurations": [

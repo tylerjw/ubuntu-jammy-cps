@@ -2,13 +2,13 @@
   "name": "Python",
   "cps_version": "0.11.0",
   "components": {
-    "python3.10-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libpython3.10.a"
-    },
     "python3.10-static": {
       "type": "archive",
       "location": "/usr/lib/x86_64-linux-gnu/libpython3.10.so"
+    },
+    "python3.10-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libpython3.10.a"
     },
     "python3.10": {
       "type": "interface",

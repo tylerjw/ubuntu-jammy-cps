@@ -2,10 +2,6 @@
   "name": "libcurl",
   "cps_version": "0.11.0",
   "components": {
-    "curl-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libcurl.so"
-    },
     "curl": {
       "type": "interface",
       "configurations": {
@@ -29,6 +25,10 @@
     "curl-shared": {
       "type": "dylib",
       "location": "/usr/lib/x86_64-linux-gnu/libcurl.a"
+    },
+    "curl-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libcurl.so"
     }
   },
   "configurations": [

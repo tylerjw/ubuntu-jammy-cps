@@ -9,14 +9,14 @@
     "menu": {
       "type": "interface",
       "configurations": {
-        "shared": {
-          "requires": [
-            ":menu-shared"
-          ]
-        },
         "static": {
           "requires": [
             ":menu-static"
+          ]
+        },
+        "shared": {
+          "requires": [
+            ":menu-shared"
           ]
         }
       },

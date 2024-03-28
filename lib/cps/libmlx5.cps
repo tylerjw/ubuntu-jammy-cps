@@ -6,6 +6,10 @@
       "type": "archive",
       "location": "/usr/lib/x86_64-linux-gnu/libmlx5.so"
     },
+    "mlx5-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libmlx5.a"
+    },
     "mlx5": {
       "type": "interface",
       "configurations": {
@@ -25,10 +29,6 @@
           "/usr/include"
         ]
       }
-    },
-    "mlx5-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libmlx5.a"
     }
   },
   "configurations": [

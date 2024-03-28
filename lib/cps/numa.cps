@@ -2,14 +2,6 @@
   "name": "numa",
   "cps_version": "0.11.0",
   "components": {
-    "numa-static": {
-      "type": "archive",
-      "location": "/usr/lib/x86_64-linux-gnu/libnuma.so"
-    },
-    "numa-shared": {
-      "type": "dylib",
-      "location": "/usr/lib/x86_64-linux-gnu/libnuma.a"
-    },
     "numa": {
       "type": "interface",
       "configurations": {
@@ -29,6 +21,14 @@
           "/usr/include"
         ]
       }
+    },
+    "numa-shared": {
+      "type": "dylib",
+      "location": "/usr/lib/x86_64-linux-gnu/libnuma.a"
+    },
+    "numa-static": {
+      "type": "archive",
+      "location": "/usr/lib/x86_64-linux-gnu/libnuma.so"
     }
   },
   "configurations": [
